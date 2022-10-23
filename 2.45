@@ -1,0 +1,12 @@
+is_leap_year = False
+   
+input_year = int(input())
+string_year = str(input_year)
+if input_year == 1900:
+    print(input_year,'- not a leap year')
+elif (string_year[-1] == 0) and (string_year[-2] == 0) and (input_year % 400 == 0):
+    print(input_year,'-not a leap year')
+elif input_year % 4 == 0:
+    print(input_year,'- leap year')
+else:
+    print(input_year,'- not a leap year')
